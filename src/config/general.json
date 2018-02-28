@@ -1,0 +1,6 @@
+{
+    "port": 5000,
+    "bodyLimit": "100kb",
+    "corsHeaders": ["Link"],
+    "baseUrl": "http://localhost:8080/api/"
+}
