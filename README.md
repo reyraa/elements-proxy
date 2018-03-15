@@ -1,6 +1,8 @@
+# Elements Proxy
+
 A proxy on Lisk Elements module.
 When you don't want or can not implement Lisk Elements in your project, this NodeJS based proxy comes into play.
-==================================
+
 
 Getting Started
 ---------------
