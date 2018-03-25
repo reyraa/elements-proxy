@@ -16,8 +16,7 @@ const activePeer = Lisk.api(testNet);
 
 export default ({ endpoint, data }) =>
   new Promise((resolve, reject) => {
-    console.log(endpoint);
-    if (endpoint === 'getAccount') {
+    if (endpoint === 'getAccount/') {
       activePeer.getAccount(data.address, (data) => {
         if (data.success) {
           resolve(data.account);
@@ -31,7 +30,7 @@ export default ({ endpoint, data }) =>
         }
       });
     } else {
-      activePeer.sendRequest(`${endpoint.replace(/^\/|\/$/, '')}/`, data, (res) => {
+      activePeer.sendRequest(endpoint, data, (res) => {
         if (res.success) {
           resolve(res);
         } else {
